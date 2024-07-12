@@ -1,4 +1,4 @@
 from alg_order import calculate_order
-alg = "M2 E S"
+alg = "R U"
 order = calculate_order(alg)
 print(order)

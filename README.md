@@ -166,3 +166,9 @@ Executing each move as a function one at a time is tedious, instead, you can use
         
             self.rep(move[0], rep)
 ```
+<br>
+<br>
+<br>
+
+# Finding the Order of an Algorithm
+TODO

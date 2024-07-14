@@ -15,7 +15,6 @@ def calculate_order(alg:str):
     cycles = []
     c = Cube()
     c.execute(alg)
-
     def cycle(cube: Cube, face, i, j, lvl):
         target = SOLVED_STATE[face][i][j]
         if target in visited:
@@ -38,4 +37,14 @@ def calculate_order(alg:str):
                     cycle(c, face, i, j, 1)
     
     order = reduce(math.lcm, cycles)
+    return order
+
+def brute_force(alg:str):
+    c = Cube()
+    order = 0
+    while True:
+        c.execute(alg)
+        order+=1
+        if c.faces == SOLVED_STATE:
+            break
     return order
